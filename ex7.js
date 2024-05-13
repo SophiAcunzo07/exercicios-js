@@ -8,35 +8,61 @@
 // Valor total da compra acima de R$ 200,00: desconto de 20%.
 // Exiba o valor final da compra com o desconto aplicado.
 
-let valorCompra = prompt("Digite o valor total da compra:");
+// let valorCompra = prompt("Digite o valor total da compra:");
 
-// Converte o valor da compra para um número
+// // Converte o valor da compra para um número
 
-valorCompra = parseFloat(valorCompra);
+// valorCompra = parseFloat(valorCompra);
 
-// Define variável para armazenar o valor final da compra com desconto
+// // Define variável para armazenar o valor final da compra com desconto
 
-let valorFinal;
+// let valorFinal;
 
-// Verifica o valor da compra e aplica o desconto progressivo
+// // Verifica o valor da compra e aplica o desconto progressivo
 
-if (valorCompra <= 100) {
+// if (valorCompra <= 100) {
 
-    // Sem desconto
+//     // Sem desconto
 
-    valorFinal = valorCompra;
-} else if (valorCompra <= 200) {
+//     valorFinal = valorCompra;
+// } else if (valorCompra <= 200) {
 
-    // Desconto de 10%
+//     // Desconto de 10%
 
-    valorFinal = valorCompra * 0.9;
-} else {
+//     valorFinal = valorCompra * 0.9;
+// } else {
 
-    // Desconto de 20%
+//     // Desconto de 20%
 
-    valorFinal = valorCompra * 0.8;
+//     valorFinal = valorCompra * 0.8;
+// }
+
+// // Exibe o valor final da compra com desconto aplicado
+
+// console.log("O valor final da compra com desconto é: R$" + valorFinal.toFixed(2));
+
+//
+
+let valorTotal = parseFloat(prompt("digite o valor dqa compra: "))
+
+let desconto;
+
+if (valorTotal <= 100) {
+    //sem desconto
+    desconto = 0;
+    console.log("o valor de desconto foi: " + (desconto))
 }
 
-// Exibe o valor final da compra com desconto aplicado
+else if (valorTotal <= 200) {
+    //sem desconto
+    desconto = 0.1;
+    console.log("o valor de desconto foi: " + (desconto*100)+ "%")
+}
+else {
+    desconto = 0.2;
+    console.log("o valor de desconto foi: " + (desconto*100)+ "%")
+}
 
-console.log("O valor final da compra com desconto é: R$" + valorFinal.toFixed(2));
+let valorFinal = valorTotal - (valorTotal*desconto)
+
+console.log("valor final da compra com desconto e de: R$" + valorFinal)
