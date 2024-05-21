@@ -129,4 +129,8 @@ switch (opcao) {
 
     default:
         break
+
 }
+
+    resposta = window.prompt("MENU\nDigite a opcao desejada: \n\n1 - exercicioDia - exercicioParImpar")
+    console.clear() 
